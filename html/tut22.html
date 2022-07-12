@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            background-color: greenyellow;
+            padding: 35px;
+            margin: 35px auto;
+            width: 600px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: red;
+            background-color: blueviolet;
+        }
+        a:visited{
+            color: yellow;
+            background-color: brown;
+        }
+        a:active{
+            color: green;
+            background-color: grey;
+        }
+        .btn{
+            border: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: bisque;
+            padding: 6px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            background-color: coral;
+            color: slategray;
+            border: 2px solid whitesmoke;
+            cursor: context-menu;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum animi, obcaecati totam veritatis pariatur velit omnis accusamus ab sequi excepturi maxime molestias dolorum, quisquam earum accusantium alias eaque modi. Ab recusandae, quibusdam incidunt, ratione iste fugiat est nihil minima eos ad aspernatur exercitationem unde tempora quis odio at porro nostrum.</p>
+        <a href="http://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>

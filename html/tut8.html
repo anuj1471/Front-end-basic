@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- FORMS -->
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <!-- Label tag is for labeling the particular data so when you tap on label then it goes to suggest you to fill on that data
+        NOTE : label id=  is exactly same to label for= -->
+      <label for="name">Name</label>
+      <!-- input is for inputing the specific data tag on web  -->
+      <div>
+        <input type="Name" name="myName" id="name" />
+      </div>
+      <br />
+      <div>Role: <input type="Role" name="myRole" /></div>
+      <br />
+      <div>Email: <input type="email" name="myEmail" /></div>
+      <br />
+      <div>Bouns : <input type="number" name="myBouns" /></div>
+      <br />
+      <div>Date : <input type="date" name="myDate" /></div>
+      <br />
+      <div>
+        <!-- checkbox 
+        If we already mark then type the checked   -->
+        Are you eligible : <input type="checkbox" name="myEligibility" checked/>
+      </div>
+      <br />
+      <div>
+        <!-- ratio 
+        If you want to give either one option 
+        NOTE : name is same on both of the tags  -->
+        Gender : Male <input type="radio" name="myGender" /> Female
+        <input type="radio" name="myGender" />
+      </div>
+      <br />
+      <div>
+        <!-- select 
+        it is for selecting from the box
+        NOTE : one hack for if you want already want select one of the option in box you just type "selected" our the option the it already exits on web (if they want select another option they will select that later whileing filling) -->
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="Swf">Swift </option>
+            <option value="Ven"selected>Venue </option>
+        </select>
+        
+      </div>
+      <br />
+      <div>
+        Write about yourself <br /><textarea
+          name="myText "
+          cols="50"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" name="Submit Now" />
+        <input type="reset" name="Reset Now" />
+      </div>
+    </form>
+  </body>
+</html>
